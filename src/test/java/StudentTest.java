@@ -5,6 +5,7 @@
  */
 
 import com.mycompany.se3_assignment1.*;
+import java.util.List;
 import org.joda.time.DateTime;
 import org.junit.Before;
 
@@ -41,21 +42,21 @@ public class StudentTest {
     @Test
     public void testAddModule(){
         student.addModule(module1);
-        com.mycompany.se3_assignment1.Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
-        String correctModuleName = student.getModuleString();
-        assertEquals("working", correctModuleName, testCaseModule.getModuleName());
+        
+        List<com.mycompany.se3_assignment1.Module> testCaseList = student.getModulesEnrolled();
+        
+        assertTrue(testCaseList.contains(module1));
     }
     
     @Test
     public void testRemModule(){
         student.addModule(module1);
         student.addModule(module2);
-        
-        com.mycompany.se3_assignment1.Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
-        
         student.remModule(module2);
-        String correctModuleName = student.getModuleString();
-        assertEquals("working", correctModuleName, testCaseModule.getModuleName());
+        
+        List<com.mycompany.se3_assignment1.Module> testCaseList = student.getModulesEnrolled();
+        
+        assertTrue(!testCaseList.contains(module2));
     }
     
     @Test
