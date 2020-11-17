@@ -27,8 +27,8 @@ public class CourseTest {
     public void setUp(){
         student1 = new Student("Colin Flaherty", 22, 17303453, "17-04-1999");
         student2 = new Student("Maeve Kennedy", 23, 17320345, "21-03-1998");
-        module1 = new Module("Software Engineering", "CT417");
-        module2 = new Module("Machine Learning", "CT4101");
+        module1 = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
+        module2 = new com.mycompany.se3_assignment1.Module("Machine Learning", "CT4101");
         course = new Course("ECE", new DateTime("2020-08-01T00:00:00Z"), new DateTime("2021-05-31T00:00:00Z"));
     }
     
@@ -56,7 +56,7 @@ public class CourseTest {
     public void testAddModuleCourse(){
         course.addModuleCourse(module1);
         
-        List<Module> courseModules = course.getModuleList();
+        List<com.mycompany.se3_assignment1.Module> courseModules = course.getModuleList();
         
         assertTrue(courseModules.contains(module1));
     }
@@ -67,7 +67,7 @@ public class CourseTest {
         course.addModuleCourse(module2);
         course.remModuleCourse(module2);
         
-        List<Module> courseModules = course.getModuleList();
+        List<com.mycompany.se3_assignment1.Module> courseModules = course.getModuleList();
         
         assertTrue(!courseModules.contains(module2));
     }

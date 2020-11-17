@@ -25,8 +25,8 @@ public class StudentTest {
     @Before
     public void setUp() {
         student = new Student("Colin Flaherty", 22, 17303453, "17-04-1999");
-        module1 = new Module("Software Engineering", "CT417");
-        module2 = new Module("Machine Learning", "CT4101");
+        module1 = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
+        module2 = new com.mycompany.se3_assignment1.Module("Machine Learning", "CT4101");
         course = new Course("ECE", new DateTime("2020-08-01T00:00:00Z"), new DateTime("2021-05-31T00:00:00Z"));
     }
     
@@ -41,7 +41,7 @@ public class StudentTest {
     @Test
     public void testAddModule(){
         student.addModule(module1);
-        Module testCaseModule = new Module("Software Engineering", "CT417");
+        Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
         String correctModuleName = student.getModuleString();
         assertEquals("working", correctModuleName, testCaseModule.getModuleName());
     }
@@ -51,7 +51,7 @@ public class StudentTest {
         student.addModule(module1);
         student.addModule(module2);
         
-        Module testCaseModule = new Module("Software Engineering", "CT417");
+        Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
         
         student.remModule(module2);
         String correctModuleName = student.getModuleString();

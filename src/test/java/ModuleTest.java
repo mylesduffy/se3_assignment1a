@@ -27,7 +27,7 @@ public class ModuleTest {
     public void setUp(){
         student1 = new Student("Colin Flaherty", 22, 17303453, "17-04-1999");
         student2 = new Student("Maeve Kennedy", 23, 17320345, "21-03-1998");
-        module = new Module("Software Engineering", "CT417");
+        module = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
         course1 = new Course("ECE", new DateTime("2020-08-01T00:00:00Z"), new DateTime("2021-05-31T00:00:00Z"));
         course2 = new Course("BIS", new DateTime("2020-08-01T00:00:00Z"), new DateTime("2021-05-31T00:00:00Z"));
     }
