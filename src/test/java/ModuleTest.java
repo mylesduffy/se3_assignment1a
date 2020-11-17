@@ -18,7 +18,7 @@ import org.junit.Before;
 public class ModuleTest {
     private Student student1;
     private Student student2;
-    private Module module;
+    private com.mycompany.se3_assignment1.Module module;
     private Course course1;
     private Course course2;
 

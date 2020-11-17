@@ -18,8 +18,8 @@ import static org.junit.Assert.*;
 public class StudentTest {
     
     private Student student;
-    private Module module1;
-    private Module module2;
+    private com.mycompany.se3_assignment1.Module module1;
+    private com.mycompany.se3_assignment1.Module module2;
     private Course course;
      
     @Before

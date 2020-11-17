@@ -20,8 +20,8 @@ public class CourseTest {
     private Student student1;
     private Student student2;
     private Course course;
-    private Module module1;
-    private Module module2;
+    private com.mycompany.se3_assignment1.Module module1;
+    private com.mycompany.se3_assignment1.Module module2;
     
     @Before
     public void setUp(){
