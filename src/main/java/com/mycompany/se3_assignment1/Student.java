@@ -33,7 +33,6 @@ public class Student {
         if(!modulesEnrolled.contains(moduleName)){
             modulesEnrolled.add(moduleName);
         } else {
-            System.out.println("Test2");
             System.out.println("Error: Student already enrolled in this module.");
         }
     }

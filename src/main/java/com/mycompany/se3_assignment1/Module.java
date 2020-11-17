@@ -24,9 +24,7 @@ public class Module {
     public void enrollStudent(Student student){
         if(!studentsEnrolled.contains(student)){
             studentsEnrolled.add(student);
-            student.addModule(Module.this);
         } else {
-            System.out.println("Test1");
             System.out.println("Error: Student is already enrolled in this module.");
         }
     }
