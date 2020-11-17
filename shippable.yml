@@ -8,7 +8,7 @@ branches:
 build:
     ci:
 
-    - RUN mkdir -p shippable/testresults
-    - RUN mkdir -p shippable/codecoverage
+    - mkdir -p testresults
+    - mkdir -p codecoverage
     - shippable_retry mvn install -DskipTests=true
     - cp -r target shippable/codecoverage
