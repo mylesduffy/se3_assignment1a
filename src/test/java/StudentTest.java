@@ -41,7 +41,7 @@ public class StudentTest {
     @Test
     public void testAddModule(){
         student.addModule(module1);
-        Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
+        com.mycompany.se3_assignment1.Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
         String correctModuleName = student.getModuleString();
         assertEquals("working", correctModuleName, testCaseModule.getModuleName());
     }
@@ -51,7 +51,7 @@ public class StudentTest {
         student.addModule(module1);
         student.addModule(module2);
         
-        Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
+        com.mycompany.se3_assignment1.Module testCaseModule = new com.mycompany.se3_assignment1.Module("Software Engineering", "CT417");
         
         student.remModule(module2);
         String correctModuleName = student.getModuleString();
