@@ -66,14 +66,10 @@ public class Student {
     }
 
     public void setCourseEnrolled(Course courseEnrolled) {
-        if(this.courseEnrolled != courseEnrolled) {
-            this.courseEnrolled = courseEnrolled;
-            this.modulesEnrolled = courseEnrolled.getModuleList();
-            for(Module module : modulesEnrolled){
-                module.enrollStudent(Student.this);
-            }
-        } else {
-            System.out.println("Error: Student already enrolled in this course.");
+        this.courseEnrolled = courseEnrolled;
+        this.modulesEnrolled = courseEnrolled.getModuleList();
+        for(Module module : modulesEnrolled){
+            module.enrollStudent(Student.this);
         }
     }
 
