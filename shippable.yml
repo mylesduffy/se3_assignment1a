@@ -11,4 +11,4 @@ build:
     - mkdir -p testresults
     - mkdir -p codecoverage
     - shippable_retry mvn install -DskipTests=true
-    - cp -r target shippable/codecoverage
+    - cp -r target codecoverage
