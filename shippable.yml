@@ -1,0 +1,14 @@
+language: java
+jdk: openjdk8
+
+branches:
+  only:
+    - master
+    
+build:
+    ci:
+
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - shippable_retry mvn install -DskipTests=true
+    - cp -r target shippable/codecoverage
