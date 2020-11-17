@@ -33,6 +33,7 @@ public class Student {
         if(!modulesEnrolled.contains(moduleName)){
             modulesEnrolled.add(moduleName);
         } else {
+            System.out.println("Test2");
             System.out.println("Error: Student already enrolled in this module.");
         }
     }
@@ -66,10 +67,14 @@ public class Student {
     }
 
     public void setCourseEnrolled(Course courseEnrolled) {
-        this.courseEnrolled = courseEnrolled;
-        this.modulesEnrolled = courseEnrolled.getModuleList();
-        for(Module module : modulesEnrolled){
-            module.enrollStudent(Student.this);
+        if(this.courseEnrolled != courseEnrolled){
+            this.courseEnrolled = courseEnrolled;
+            this.modulesEnrolled = courseEnrolled.getModuleList();
+            for(Module module : modulesEnrolled){
+                module.enrollStudent(Student.this);
+            }
+        } else {
+            System.out.println("Error: Student already enrolled in this course.");
         }
     }
 

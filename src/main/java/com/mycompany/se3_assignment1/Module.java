@@ -26,6 +26,7 @@ public class Module {
             studentsEnrolled.add(student);
             student.addModule(Module.this);
         } else {
+            System.out.println("Test1");
             System.out.println("Error: Student is already enrolled in this module.");
         }
     }
