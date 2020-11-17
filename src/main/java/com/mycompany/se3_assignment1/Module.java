@@ -17,8 +17,8 @@ public class Module {
     public Module(String moduleName, String moduleID){
         this.moduleName = moduleName;
         this.moduleID = moduleID;
-        studentsEnrolled = new ArrayList<>();
-        coursesAssociated = new ArrayList<>();
+        studentsEnrolled = new ArrayList<Student>();
+        coursesAssociated = new ArrayList<Course>();
     } 
 
     public void enrollStudent(Student student){

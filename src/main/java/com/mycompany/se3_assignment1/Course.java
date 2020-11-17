@@ -22,8 +22,8 @@ public class Course{
         this.courseName = courseName;
         this.startDate = startDate;
         this.endDate = endDate;
-        studentsEnrolled = new ArrayList<>();
-        moduleList = new ArrayList<>();
+        studentsEnrolled = new ArrayList<Student>();
+        moduleList = new ArrayList<Module>();
     }
 
     public void enrollStudentCourse(Student student){

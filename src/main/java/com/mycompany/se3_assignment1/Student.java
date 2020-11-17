@@ -19,7 +19,7 @@ public class Student {
         this.DOB = DOB;
         this.studentAge = studentAge;
         this.studentID = studentID;
-        this.modulesEnrolled = new ArrayList<>();
+        this.modulesEnrolled = new ArrayList<Module>();
     }
     
     public String getUsername(){
