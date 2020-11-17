@@ -91,6 +91,7 @@ public class Module {
 
         for(Student student : studentsEnrolled){
             studentSB.append(student.getUsername());
+            studentSB.append(" ");
         }
 
         String studentString = studentSB.toString();
@@ -103,6 +104,7 @@ public class Module {
 
         for(Course course : coursesAssociated){
             courseSB.append(course.getCourseName());
+            courseSB.append(" ");
         }
 
         String courseString = courseSB.toString();

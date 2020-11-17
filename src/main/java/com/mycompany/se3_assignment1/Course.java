@@ -106,6 +106,7 @@ public class Course{
 
         for(Student student : studentsEnrolled){
             studentsEnrolledSB.append(student.getUsername());
+            studentsEnrolledSB.append(" ");
         }
 
         String studentsEnrolledString = studentsEnrolledSB.toString();
@@ -118,6 +119,7 @@ public class Course{
 
         for(Module module : moduleList){
             moduleStringSB.append(module.getModuleName());
+            moduleStringSB.append(" ");
         }
 
         String moduleString = moduleStringSB.toString();

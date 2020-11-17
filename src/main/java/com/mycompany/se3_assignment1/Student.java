@@ -106,6 +106,7 @@ public class Student {
         
         for(Module module : modulesEnrolled){
             moduleSB.append(module.getModuleName());
+            moduleSB.append(" ");
         }
         
         String moduleString = moduleSB.toString();
