@@ -12,3 +12,7 @@ build:
     - mkdir -p codecoverage
     - shippable_retry mvn install -DskipTests=true
     - cp -r target codecoverage
+    
+after_success:
+ - mvn clean install cobertura:cobertura -X
+ - mvn test -X
